@@ -15,7 +15,7 @@ void setup ()
     Interactive.make( this );
     
     //your code to initialize buttons goes here
-    buttons = 
+    buttons = new MSButton [
     
     
     setBombs();
@@ -101,8 +101,10 @@ public class MSButton
     }
     public boolean isValid(int r, int c)
     {
-        //your code here
-        return false;
+     if (r>=0 && r < NUM_ROWS && c>=0 && c < NUM_COLS)
+      return true;
+     else
+      return false;
     }
     public int countBombs(int row, int col)
     {
