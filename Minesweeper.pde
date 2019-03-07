@@ -16,8 +16,7 @@ void setup ()
     
     //your code to initialize buttons goes here
     buttons = new MSButton [NUM_ROWS][NUM_COLS];
-    
-    
+    for (
     setBombs();
 }
 public void setBombs()
@@ -54,8 +53,8 @@ public class MSButton
     
     public MSButton ( int rr, int cc )
     {
-        // width = 400/NUM_COLS;
-        // height = 400/NUM_ROWS;
+        width = 400/NUM_COLS;
+        height = 400/NUM_ROWS;
         r = rr;
         c = cc; 
         x = c*width;
