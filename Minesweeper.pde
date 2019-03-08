@@ -16,7 +16,11 @@ void setup ()
     
     //your code to initialize buttons goes here
     buttons = new MSButton [NUM_ROWS][NUM_COLS];
-    for (
+    for (int r = 0; r <= buttons.length-1; r++){
+      for (int c = 0; c <= buttons[r].length-1; c++){
+        buttons [r][c] = new MSButton (r, c);
+      }
+    }
     setBombs();
 }
 public void setBombs()
